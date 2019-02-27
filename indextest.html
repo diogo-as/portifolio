@@ -2,9 +2,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 * {
   box-sizing: border-box;
+}
+.content {
+  max-width: 960px;
+  margin: auto;
 }
 
 .row::after {
@@ -26,14 +32,14 @@ html {
   background-color: #fff;
   color: #000;
   padding: 5px;
-  text-align:right;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 h2 {
   margin: 2px;
   padding-left: 10px;
 }
+
 
 .menu ul {
   list-style-type: none;
@@ -186,8 +192,29 @@ background-color:#666;
 border: 0 none;
 
 }
+a:link {
+  text-decoration: none;
+  color: black;
+}
 
+a:visited {
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  .header-img { display: none; }
+}
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
@@ -222,16 +249,16 @@ border: 0 none;
 </style>
 </head>
 <body>
-
+<div class="content">
   <div class="header">
-    <h1>Diogo Sousa</h1>
+      <h1>Diogo Sousa</h1>
     <hr></hr>
   </div>
 
   <div class="row">
     <div class="col-9 col-s-9">
       <figure class="wp-caption">
-        <img src="img/title-bg1.jpg" alt="Desenvolvimento web" class="header-img">
+        <img class="header-img" src="img/title-bg1.jpg" alt="Desenvolvimento web">
       </figure>
     </div>
 
@@ -240,44 +267,47 @@ border: 0 none;
         <h2>About me</h2>
           <p>A dedicated and motivated IT guy in search of career development</p>
           <h2>Key Skills</h2>
-          <p>HTML, CSS, Python, Git, ... </p>
+          <p>HTML, CSS, Python, Git </p>
           <h2>Objective</h2>
           <p>Fullstack developer job</p>
       </div>
     </div>
   </div>
 
-  <h2> Principais Projetos: </h2>
+  <h2> Last Projects: </h2>
 
 <div class="row">
-  <div class="col-3 col-s-4">
+  <div class="col-3 col-s-3">
     <figure class="wp-caption">
-      <img src="img/cinema.jpg" alt="Desenvolvimento web - Designed by macrovector / Freepik">
-      <figcaption class="wp-caption-text">Projeto de Texto</figcaption>
+      <img src="img/cinema-img.jpg" alt="Movies List - Designed by macrovector / Freepik">
+      <figcaption class="wp-caption-text">Best Movies List</figcaption>
     </figure>
-      <spam>git:diogoas@projeto.git</spam>
+      <a class="font-size: 8px" href="https://github.com/diogo-as/ud036_StarterCode.git">Github:diogoas-StarterCode.git</a>
   </div>
 
-  <div class="col-3 col-s-4">
+  <div class="col-3 col-s-3">
     <figure class="wp-caption">
-      <img src="img/cinema.jpg" alt="Desenvolvimento web - Designed by macrovector / Freepik">
-      <figcaption class="wp-caption-text">Projeto de Texto</figcaption>
+      <img src="img/portifolio.jpg" alt="Desenvolvimento web - Designed by macrovector / Freepik">
+      <figcaption class="wp-caption-text">Portifolio</figcaption>
     </figure>
-    <spam>git:diogoas@projeto.git</spam>
+    <a class="font-size: 8px" href="https://github.com/diogo-as/portifolio.git">Github:diogoas-portifolio</a>
   </div>
 
-  <div class="col-3 col-s-4">
+  <div class="col-3 col-s-3">
     <figure class="wp-caption">
-      <img src="img/cinema.jpg" alt="Desenvolvimento web - Designed by macrovector / Freepik">
-        <figcaption class="wp-caption-text">Projeto de Texto</figcaption>
+      <img src="img/future-app.jpg" alt="Desenvolvimento web - Designed by macrovector / Freepik">
+        <figcaption class="wp-caption-text">Mobile APP</figcaption>
     </figure>
-    <spam>git:diogoas@projeto.git</spam>
+    <a class="font-size: 8px" href="https://github.com/diogo-as/portifolio.git">Github:diogoas</a>
   </div>
 </div>
 
-  <div class="footer">
-    <p>Resize the browser window to see how the content respond to the resizing.</p>
-  </div>
 
+    <footer class="footer">
+    <p>contato</p>
+    <a href="#" class="fa fa-google"></a>
+  </footer>
+
+</div>
 </body>
 </html>
